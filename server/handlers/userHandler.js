@@ -19,7 +19,6 @@ const validation = userSchema.validate(req.body)
 
   }
  else {
-     console.log('test')
    res.status(422).json({
      message:'Validation error.',
      error: validation.error,

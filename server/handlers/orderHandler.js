@@ -1,7 +1,7 @@
 const { orderSchema } = require('../validation/validate');
 const { Order } = require('../../database/Order');
 
-console.log(Order);
+
 const createOrder = (req, res) => { 
     Order.create(req.body)
     .then(order => res.json(order))
